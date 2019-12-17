@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .col
+    button.run run
+    button.stop stop
+  .row
+    #slide-container.col
+      each file in files
+        img(src=`images/cloud/${file}`).slideImg
+    #map-container.col
+      button.move move
+      button.prev prev
+      #map
+  
